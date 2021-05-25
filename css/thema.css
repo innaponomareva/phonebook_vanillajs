@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body, ul, li, h2, h3, h4, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid green;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 4px 0 #00b100;
+    border: 2px solid #00b100;
+}
+
+.form-control::placeholder {
+    font-size: 0.8rem;
+    font-family: inherit;
+}
+
+.form-control.invalid {
+    border-color: #dc3545;
+}
+
+.form-control.invalid:focus {
+    outline: none;
+    box-shadow: 0 0 4px 0 #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.alert {
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-success {
+    border: 1px solid green;
+    background-color: rgba(0, 128, 0, 0.68);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #006a00;
+}
+
+.btn-primary {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0069d9;
+}
+
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.loader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid green;
+    border-color: green transparent green transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
