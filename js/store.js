@@ -1,13 +1,13 @@
-const TOKEN_KEY = 'TOKEN';
+const TOKEN_KEY = "TOKEN";
 
-class Store{
-  static getCurrentToken(){
+class Store {
+  static getCurrentToken() {
     return localStorage.getItem(TOKEN_KEY);
   }
-  static saveToken(token){
-    localStorage.setItem(TOKEN_KEY,token);
+  static saveToken(token) {
+    localStorage.setItem(TOKEN_KEY, token);
   }
-  static removeToken(){
+  static removeToken() {
     localStorage.removeItem(TOKEN_KEY);
   }
 }
